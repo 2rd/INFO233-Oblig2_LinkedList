@@ -1,0 +1,39 @@
+Tord Kvifte
+tkv015
+
+Flere av funksjonene det er gjort kjøretidsanalyse på kunne vært mer effektive dersom jeg implementerte LinkedList med
+en tail. Da ville add-funksjonen, som benyttes i flere andre metoder vært O(1) i stedet for O(n).
+
+Oppgave 6
+
+append:
+O(n^2)
+Itererer gjennom alle elementene i listen som blir lagt til én gang, i tillegg til at add-metoden er O(n).
+Dette gir O(n^2).
+
+prepend:
+O(n)
+Itererer gjennom alle elementene i listen som blir lagt til én gang. Put-metoden er O(1).
+Dette gir en kjøretid på O(n).
+
+concat:
+O(n^2)
+Når concat itererer gjennom alle elementene( O(n) ) i alle listene ( O(n) ) gir det en kjøretid på O(n^2).
+
+
+Oppgave 12
+
+filter:
+O(n^2)
+Iterer gjennom alle elementene ( O(n) ) og bruker remove(Object o) ( O(n) ) til å fjerne elementene som svarer til
+predikatet. Dette gir en kjøretid på O(n^2).
+
+map:
+O(n^2)
+Itererer gjennom alle elementene i listen ( O(n) ) og bruker add-metoden ( O(n) ) til å legge til elementene i en ny liste.
+Dette gir en kjøretid på O(n^2).
+
+reduce:
+O(n)
+itererer gjennom elementene i listen én gang og kaller apply-metoden( O(1) ) på hvert enkelt.
+Dette gir en kjøretid på O(n).
